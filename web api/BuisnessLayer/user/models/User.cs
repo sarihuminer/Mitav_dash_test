@@ -7,7 +7,8 @@ namespace BuisnessLayer.user.models
 {
     public class User
     {
-        public int ID_Num { get; set; }
+        public int ID { get; set; }
+        public string ID_Num { get; set; }
         public string Full_Name { get; set; }
         public DateTime Birth_Date { get; set; }
 
@@ -37,7 +38,8 @@ namespace BuisnessLayer.user.models
             List<User> ulist =new List<User>();
             foreach (var item in userDB)
             {
-                ulist.Add(new User(item.ID_Num, item.Full_Name, item.Birth_Date));
+                User u = new User(item.ID, item.ID_Num, item.Full_Name, item.Birth_Date);
+                ulist.Add(u);
             }
 
             return ulist;
@@ -47,7 +49,14 @@ namespace BuisnessLayer.user.models
         {
 
         }
-        public User(int id, string Full_Name, DateTime Birth_Date)
+        public User(int idp,string id, string Full_Name, DateTime Birth_Date)
+        {
+            this.ID = idp;
+            this.ID_Num = id;
+            this.Full_Name = Full_Name;
+            this.Birth_Date = Birth_Date;
+        }
+        public User(string id, string Full_Name, DateTime Birth_Date)
         {
             this.ID_Num = id;
             this.Full_Name = Full_Name;
@@ -55,6 +64,7 @@ namespace BuisnessLayer.user.models
         }
         public User(UserDB userDB)
         {
+            this.ID = userDB.ID;
             this.ID_Num = userDB.ID_Num;
             this.Full_Name = userDB.Full_Name;
             this.Birth_Date = userDB.Birth_Date;
