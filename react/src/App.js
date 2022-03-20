@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
-import Songs from './components/songs';
-import NewSong from './components/newSong'
-import  {Route} from 'react-router-dom'
+
+import { Route } from 'react-router-dom'
+import Users from './components/users';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-   {/* <switch>
+        {/* <switch>
      <Route path="/new" component={NewSong} exact/>
    </switch> */}
-     {/*   */}
-     <Songs></Songs>
+        {/*   */}
+        <Users></Users>
       </header>
     </div>
   );

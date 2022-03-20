@@ -1,35 +1,35 @@
 import Axios from "axios";
 
-const initialState={
-    songs:[]
+const initialState = {
+    users: []
 }
-const rootReducer=(state=initialState,action)=>{
-    switch(action.type){
+const rootReducer = (state = initialState, action) => {
+    switch (action.type) {
         case 'ADD':
-            return{
+            return {
                 ...state,
-                songs:state.songs.add(action.value)
+                users: state.users.add(action.value)
             };
-            case 'DELETE':
-                return{
-                    ...state,
-                    counter:state.counter-1
-                };  
-                case 'EDIT':
-                    debugger;
-                    console.log(action.value)
-            return{
+        case 'DELETE':
+            return {
                 ...state,
-                songs:action.value
-            }; 
-            case 'LOAD':
-                console.log('load')
-                return{
-                    ...state,
-                    songs:action.value,
-                    
-                }; 
-            
-    } 
-    return state;     
-};export default rootReducer;
+                counter: state.counter - 1
+            };
+        case 'EDIT':
+            debugger;
+            console.log(action.value)
+            return {
+                ...state,
+                users: action.value
+            };
+        case 'LOAD':
+            console.log('load')
+            return {
+                ...state,
+                users: action.value,
+
+            };
+
+    }
+    return state;
+}; export default rootReducer;
