@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.song{
+  padding: 5px;;
+  margin: 5px;
+  display: inline-block; 
+  border:black 5px solid;
+  background-color:dodgerblue;
+}
+.song:hover,
+.song:active {
+    background-color:darkorchid;
+}
+#listH1:hover,
+#listH1:active {
+  font-size: 80px;
+  color: crimson;
+}
+
+.btn{
+  border-radius: 50%;
+  background-color: deepskyblue;
+  color: #282c34;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2px;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.edit{
+  direction: rtl;
+}
+.inputs{
+  border-radius: 15%;
+  margin: 5px;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

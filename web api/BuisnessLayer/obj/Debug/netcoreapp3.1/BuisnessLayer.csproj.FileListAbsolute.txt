@@ -1,0 +1,21 @@
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\bin\Debug\netcoreapp3.1\BuisnessLayer.deps.json
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\bin\Debug\netcoreapp3.1\BuisnessLayer.dll
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\bin\Debug\netcoreapp3.1\BuisnessLayer.pdb
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.csprojAssemblyReference.cache
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.AssemblyInfoInputs.cache
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.AssemblyInfo.cs
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.csproj.CoreCompileInputs.cache
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.dll
+C:\Users\sari\Documents\משרד המשפטים\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.pdb
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.csprojAssemblyReference.cache
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.AssemblyInfoInputs.cache
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.AssemblyInfo.cs
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.csproj.CoreCompileInputs.cache
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.dll
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.pdb
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\bin\Debug\netcoreapp3.1\BuisnessLayer.deps.json
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\bin\Debug\netcoreapp3.1\BuisnessLayer.dll
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\bin\Debug\netcoreapp3.1\BuisnessLayer.pdb
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\bin\Debug\netcoreapp3.1\DataLayer.dll
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\bin\Debug\netcoreapp3.1\DataLayer.pdb
+C:\Users\sari\Documents\mitav_dash\web api\BuisnessLayer\obj\Debug\netcoreapp3.1\BuisnessLayer.csproj.CopyComplete
