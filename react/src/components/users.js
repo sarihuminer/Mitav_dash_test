@@ -10,6 +10,7 @@ class Users extends Component {
         users: []
     }
     constructor() {
+        debugger
         super();
         axios.get('/').then(x => {
             this.setState({ users: x.data })
@@ -31,9 +32,9 @@ class Users extends Component {
 
 
     render() {
-        const ulist = null;
+        let ulist = null;
         if (this.state.users) {
-            ulist = this.props.users.map(u => {
+            ulist = this.state.users.map(u => {
                 return <User full_Name={u.full_Name} key={u.id} id={u.iD_Num} birth_Date={u.birth_Date} ></User>
             });
         }
