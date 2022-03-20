@@ -2,13 +2,21 @@
 using System.Collections.Generic;
 using System.Text;
 using DataLayer.Entities;
+using System.Text.RegularExpressions;
+using System.ComponentModel.DataAnnotations;
 
 namespace BuisnessLayer.user.models
 {
     public class User
     {
+
+
         public int ID { get; set; }
+        [RegularExpression(@"^[0-9]{9}$",
+            ErrorMessage = "not valid Israeli id num.")]
         public string ID_Num { get; set; }
+        [RegularExpression(@"^[a-zA-Z''-'\s]{1,20}$",
+        ErrorMessage = "Characters are not allowed.")]
         public string Full_Name { get; set; }
         public DateTime Birth_Date { get; set; }
 
@@ -35,7 +43,7 @@ namespace BuisnessLayer.user.models
         //}
         public static List<User> FromUserDBList(List<UserDB> userDB)
         {
-            List<User> ulist =new List<User>();
+            List<User> ulist = new List<User>();
             foreach (var item in userDB)
             {
                 User u = new User(item.ID, item.ID_Num, item.Full_Name, item.Birth_Date);
@@ -49,7 +57,7 @@ namespace BuisnessLayer.user.models
         {
 
         }
-        public User(int idp,string id, string Full_Name, DateTime Birth_Date)
+        public User(int idp, string id, string Full_Name, DateTime Birth_Date)
         {
             this.ID = idp;
             this.ID_Num = id;

@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.Mime;
 using DataLayer;
 using System.Linq;
+using DataLayer.Entities;
 
 namespace BuisnessLayer.user
 {
@@ -23,23 +24,23 @@ namespace BuisnessLayer.user
         {
             try
             {
-               
+                UserDB userDB = User.ToUserDB(user);
+                _context.Users.Add(userDB);
+                _context.SaveChanges();
+                return true;
             }
+
             catch (Exception e)
             {
-
                 return false;
             }
-
-            return true;
-            // NotImplemented sql
         }
 
         public List<User> GetUser()
         {
             try
             {
-                List<User> userList = User.FromUserDBList( _context.Users.ToList());
+                List<User> userList = User.FromUserDBList(_context.Users.ToList());
                 return userList;
             }
             catch (Exception e)
@@ -50,21 +51,21 @@ namespace BuisnessLayer.user
 
         public bool UpdateUser(User user)
         {
-          
+
 
             try
             {
-            User changeuser=  new User( _context.Users.Where(u=>u.ID_Num==u.ID_Num).FirstOrDefault());
+                User changeuser = new User(_context.Users.Where(u => u.ID_Num == u.ID_Num).FirstOrDefault());
                 changeuser = user;
                 _context.SaveChanges();
                 return true;
             }
-           
+
             catch (Exception e)
             {
                 return false;
             }
-           
+
         }
     }
 }

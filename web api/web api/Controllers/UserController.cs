@@ -24,11 +24,9 @@ namespace web_api.Controllers
         public IActionResult Get()
         {
             List<models.User> list= _userRepository.GetUser();
+            if(list!=null)
             return Ok(list);
-            //if there is sql connect....but now is empty at all..
-            //if (list != null)
-            //    return Ok(list);
-            //return BadRequest(list);
+            return BadRequest("canot get data,please reload this file later");
         }
 
        
@@ -38,8 +36,8 @@ namespace web_api.Controllers
         public IActionResult Post([FromBody] models.User user)
         {
             if (this._userRepository.AddUser(user))
-                return Ok(true);
-            return BadRequest(false);
+                return Ok("add user succsessfully");
+            return BadRequest("add user failed");
         }
 
         // PUT api/<ContributionController>/5
