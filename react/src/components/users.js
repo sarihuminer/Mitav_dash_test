@@ -9,18 +9,18 @@ class Users extends Component {
 
         users: []
     }
-    // constructor() {
-    //     super();
-    //     axios.get('/gets').then(x => {
-    //         this.setState({ users: x.data })
-    //     })
-    // }
+    constructor() {
+        super();
+        axios.get('/').then(x => {
+            this.setState({ users: x.data })
+        })
+    }
 
     componentDidMount() {
         debugger;
         console.log(this.props.users);
         // if (this.props.users == 0) {
-        axios.get('/gets').then(x => {
+        axios.get('/').then(x => {
             this.setState({ users: x.data })
         })
 
